@@ -1,0 +1,257 @@
+/* Basic Reset */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;     /* Center items horizontally */
+    justify-content: center; /* Center items vertically (if needed) */
+    text-align: center;      /* Ensures text within children, like h1, is centered */
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px; /* Adjust this value to increase or decrease the space */
+}
+
+
+
+header nav {
+    flex-grow: 1;
+}
+
+header a {
+color: #333;          /* Ensures text is white */
+text-decoration: none; /* Removes underline from links */
+padding: 10px;         /* Adds some padding around the link text */
+}
+
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li a:hover {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+img {
+    justify-content: center;
+}
+
+h1 {
+    color: rgba(14, 194, 164, 0.938);
+    text-align: center;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: auto;
+}
+
+.logo img {
+    width: 350px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.logo {
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.paragraph-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.left-paragraph, .right-paragraph {
+    flex: 1;
+    padding: 15px;
+    line-height: 2; 
+    font-size: 16px;
+    text-align: left;
+}
+
+
+@media (max-width: 800px) {
+    .paragraph-container {
+        flex-direction: column;
+    }
+}
+
+
+/* Main Section with Grid */
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px; 
+}
+
+.partners-container {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    flex-wrap: wrap;
+    gap: 10px; 
+    text-align: right;
+}
+
+.partners-container img {
+    max-height: 20px;
+    margin: 10px;
+    margin-left: 100px;
+    text-align: right;
+}
+
+.card {
+    width: 50%;
+    height: 300px;
+    margin: 20px;
+    background-color: rgb(13, 197, 182);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    color: #fff;
+    text-align: left;
+    line-height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#card1 {
+    background-color: rgb(13, 197, 182);
+  }
+  
+  #card2 {
+    background-color: rgb(56, 56, 219);
+  }
+  
+  #card3 {
+    background-color: rgb(12, 12, 36);
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+
+
+.icon {
+    color: #fff;
+    font-size: 24px;
+}
+
+.card .icon {
+    font-size: 30px;
+    color: #ff6347;
+    margin-bottom: 10px;
+
+}
+
+.card img.icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px; 
+  }
+
+  .card h1 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    color: #f8f6f6;
+    text-align: left;
+  }
+
+  .card p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card .choose-country {
+    display: inline-block;
+    color: #ffffff; 
+    font-size: 16px; 
+    text-decoration: none; 
+    margin-top: 15px;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.card .choose-country {
+    display: inline-block;
+    color: #ffffff; 
+    font-size: 16px; 
+    text-decoration: none; 
+    margin-top: 15px;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+.card .specialists {
+    display: inline-block;
+    color: #ffffff; 
+    font-size: 16px; 
+    text-decoration: none; 
+    margin-top: 15px;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+/* Footer styling */
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    color: grey;
+}
